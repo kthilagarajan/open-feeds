@@ -7,6 +7,17 @@ var Users = function (app) {
 };
 module.exports = Users;
 
+Users.prototype.isAuthorized = function (req, cbk) {
+    if (req.session && req.session.user) {
+        cbk(req.session.user)
+    } else {
+        cbk({
+            status: false,
+            err: "Not authorized"
+        })
+    }
+}
+
 Users.prototype.loginUser = function (req, cbk) {
 
     var self = this;
@@ -22,7 +33,8 @@ Users.prototype.loginUser = function (req, cbk) {
                 if (res) {
                     req.session.user = docs;
                     cbk({
-                        status: true
+                        status: true,
+                        data: docs
                     })
                 } else {
                     cbk({

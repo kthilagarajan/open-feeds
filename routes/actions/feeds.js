@@ -18,7 +18,7 @@ Feeds.prototype.getAllFeeds = function (req, cbk) {
     self.db.feeds.find(reqObj, function (err, docs) {
         cbk({
             status: true,
-            data: docs
+            data: _.sortBy(docs,"timestamp").reverse()
         })
     })
 

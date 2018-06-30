@@ -16,8 +16,9 @@ Routes.prototype.init = function () {
         if (req.session && req.session.user) {
             next();
         } else {
-            res.status(401)
-            res.json({ status: false, data: "Not logged in!" })
+            next();
+            /* res.status(401)
+            res.json({ status: false, err: "Not logged in!" }) */
         }
     }
 
@@ -28,6 +29,12 @@ Routes.prototype.init = function () {
     // User
     self.app.post('/login', function (req, res) {
         self.user.loginUser(req, function (response) {
+            res.json(response);
+        })
+    });
+
+    self.app.post('/isAuthorized', function (req, res) {
+        self.user.isAuthorized(req, function (response) {
             res.json(response);
         })
     });

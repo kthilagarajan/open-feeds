@@ -1,0 +1,162 @@
+body, div, h1, h2 {
+  font-family: 'Raleway', sans-serif;  
+}
+
+body {
+  background: #E1F5FE;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background: linear-gradient(to right, #00BCD4, #5C6BC0, #3F51B5);
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0px 5% auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.header-card {
+  position: absolute !important;
+  top: 10%;
+  left: 5%;
+  width: 90% !important;
+  min-height: 100px !important;
+}
+
+.message-card {
+  min-height: 100px !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-98 {
+  width: 98% !important;
+}
+
+.hr-register {
+  width: 20%;
+  border-color: #5cb9d3;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.hr-login {
+  width: 20%;
+  border-color: #4351b5;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.primary-btn {
+  background-color: #5cb9d3 !important;
+  font-weight: bold !important;
+  border-radius: 5px !important;
+}
+
+.secondary-btn {
+  background-color: #4351b5 !important;
+  font-weight: bold !important;
+  border-radius: 5px !important;
+}
+
+.text-area {
+  resize: none;
+  border: 0px;
+  outline: 0px;
+  padding: 15px;
+  width: 80%;
+}
+
+.posts {
+  margin: 10% auto;
+  margin-top: 20px;
+  width: 92%;
+}
+
+.user_name {
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+}
+
+.text-left{
+  text-align:left;
+}
+
+.margin-none {
+  margin: 0px;
+}
+
+.float-right {
+  float: right;
+}
+
+.timer {
+  position: absolute;
+  right: 10px;
+  color: #ccc;
+}
+
+.out{
+  position: absolute;
+  right: 8%;
+  top: 4%;
+}
+
+.new-comment {
+  padding-right: 15px !important;
+  padding-top: 10px !important;
+}
+
+.new-comment textarea {
+  border-radius: 5px;
+  outline: 0px;
+  border: 1px dashed #aaa;
+  padding: 5px;
+  background: #fafafa !important;
+}
+
+.otherComments{
+  font-size: 1rem;
+  /* border: 1px solid #eee;
+  padding: 10px; */
+  margin-bottom: 10px;
+}
+
+.otherComments .each {
+  margin-bottom: 5px;
+  background: #eee;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.otherComments .title {
+  color: #000;
+}
+
+.otherComments .message {
+  color: rgba(0,0,0,.54);
+}
